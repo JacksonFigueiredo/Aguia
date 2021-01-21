@@ -33,13 +33,13 @@ namespace Aguia
         public void DesenhaRetangulo(int X, int Y, int W, int H, Color color)
         {
             BrushDeCorSolida.Color = color;
-            Dispositivo.DrawRectangle(new Rectangle(X, Y, W, H), BrushDeCorSolida);
+            Dispositivo.DrawRectangle(new SharpDX.Mathematics.Interop.RawRectangleF(X, Y, W, H), BrushDeCorSolida);
         }
 
         public void DesenhaRetangulo(int X, int Y, int W, int H, Color color, float stroke)
         {
             BrushDeCorSolida.Color = color;
-            Dispositivo.DrawRectangle(new Rectangle(X, Y, W, H), BrushDeCorSolida, stroke);
+            Dispositivo.DrawRectangle(new SharpDX.Mathematics.Interop.RawRectangleF(X, Y, W, H), BrushDeCorSolida, stroke);
         }
 
         public void DesenhaPreenchimentoRetangulo(int X, int Y, int W, int H, Color color)
@@ -439,7 +439,7 @@ namespace Aguia
             Geometria = new PathGeometry(padraodefabrica);
             sinkdegeometria = Geometria.Open();
             sinkdegeometria.BeginFigure(Triangulo.Point1, new FigureBegin());
-            sinkdegeometria.AddLines(new SharpDX.Vector2[] { Triangulo.Point1, Triangulo.Point2, Triangulo.Point3 });
+            sinkdegeometria.AddLines(new SharpDX.Mathematics.Interop.RawVector2[] { Triangulo.Point1, Triangulo.Point2, Triangulo.Point3 });
             sinkdegeometria.EndFigure(new FigureEnd());
             sinkdegeometria.Close();
 

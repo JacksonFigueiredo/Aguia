@@ -8,7 +8,6 @@ using FontFactory = SharpDX.DirectWrite.Factory;
 using Format = SharpDX.DXGI.Format;
 
 using SharpDX;
-using SharpDX.Windows;
 using SharpDX.Direct2D1;
 using SharpDX.DirectWrite;
 using System.Runtime.InteropServices;
