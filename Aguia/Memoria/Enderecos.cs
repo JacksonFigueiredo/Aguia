@@ -1,0 +1,28 @@
+﻿using System;
+
+namespace Aguia
+{
+    struct Enderecos
+    {
+        public static Int64 ENDERECO_DXRENDER = 0x142738080;
+        public static Int64 ENDERECO_GAMERENDER = 0x142672378;
+        public static Int64 ENDERECO_VERANGULOS = 0x1423b2ec0;
+        public static Int64 ENDERECO_MAE = 0x142364b78;
+        public static Int64 ENDERECO_CONTEXTODOJOGO = 0x142670d80;
+        public static Int64 ENDERECO_ARMA_ATUAL_ATIRANDO = ENDERECO_VERANGULOS + 0x8;
+        public static Int64 ENDERECO_MODOENTRADABORDA = 0x142671fb0; //BORDERINPUTMODE
+
+
+     //   public static Int64 OFFSET_CLIENTEXPLOSIONENTITY = 0x142881A40;
+   //     public static Int64 OFFSET_CLIENTPICKUPENTITY = 0x14287FCB0;      
+   //     public static Int64 OFFSET_CLIENTGRENADEENTITY = 0x142881900; 
+    //    public static Int64 OFFSET_CLIENTSUPPLYSPHEREENTITY = 0x142881680;
+        public static Int64 ENDERECO_ESTATISTICASDETIRO = 0x142572950;
+        public static Int64 ENDERECO_CONFIGURACOESSINCRONIZADAS = 0x1421AC5A0;    //15122015 0x1421A9520  //16062015 0x1421A1760   //26052015 0x1421968A8
+
+
+
+
+
+    }
+}
